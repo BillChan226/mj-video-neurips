@@ -1,24 +1,5 @@
 # MJ-VIDEO: Fine-Grained Benchmarking and Rewarding Video Preferences in Video Generation
 
-<a target="_blank" href="https://arxiv.org/pdf/2502.01719">
-<img style="height:22pt" src="https://img.shields.io/badge/-Paper-red?style=flat&logo=arxiv"></a>
-<a target="_blank" href="https://github.com/aiming-lab/MJ-Video">
-<img style="height:22pt" src="https://img.shields.io/badge/-Code-green?style=flat&logo=github"></a>
-<a target="_blank" href="https://github.com/aiming-lab/MJ-Video">
-<img style="height:22pt" src="https://img.shields.io/badge/-🌐%20Website-blue?style=flat"></a>
-<a target="_blank" href="https://github.com/aiming-lab/MJ-Video/MJ-BENCH-VIDEO">
-<img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Dataset-red?style=flat"></a>
-<a target="_blank" href="https://github.com/aiming-lab/MJ-Video">
-<img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Models-red?style=flat"></a>
-
-This repository contains the implementation of the paper "MJ-VIDEO: Fine-Grained Benchmarking and Rewarding Video Preferences in Video Generation".  We create a fine-grained video preference dataset **MJ-BENCH-VIDEO** and a MoE-structured video reward model **MJ-VIDEO**. 
-
-## :tada: News
-
-**MJ-VIDEO-4B** coming soon !
-
-**Aligned Video Generation Model** coming soon !
-
 ## :white_check_mark: Abstract
 
 Recent advancements in video generation have significantly improved the ability to synthesize videos from text instructions. However, existing models still struggle with key challenges such as instruction misalignment, content hallucination, safety concerns, and bias. Addressing these limitations, we introduce MJ-BENCH-VIDEO, a large-scale video preference benchmark designed to evaluate video generation across five critical aspects: Alignment, Safety, Fineness, Coherence & Consistency, and Bias & Fairness. This benchmark incorporates 28 fine-grained criteria to provide a comprehensive evaluation of video preference. Building upon this dataset, we propose MJ-VIDEO, a Mixture-of-Experts (MoE)-based video reward model designed to deliver fine-grained reward. MJ-VIDEO can dynamically select relevant experts to accurately judge the preference based on the input text-video pair. This architecture enables more precise and adaptable preference judgments. Through extensive benchmarking on MJ-BENCH-VIDEO, we analyze the limitations of existing video reward models and demonstrate the superior performance of MJ-VIDEO in video preference assessment, achieving 17.58% and 15.87% improvements in overall and fine-grained preference judgments, respectively. Additionally, introducing MJ-VIDEO for preference tuning in video generation enhances the alignment performance.
@@ -186,18 +167,3 @@ Automated evaluation on VBench evaluates **Imaging Quality (IQ)**, **Human Actio
 | VideoCrafter2 | 56.30           | 68.80         | *67.04*   | 90.00     | 54.00     | **28.39** |
 | VideoScore    | *64.50*         | *74.80*       | 65.03     | *92.00*   | *54.79*   | *28.38*   |
 | **MJ-VIDEO**  | **69.90**       | **79.20**     | **67.89** | **94.00** | **55.09** | 28.19     |
-
-# Cite
-
-Please cite us using the following bibtex
-```bibtex
-@misc{tong2025mjvideofinegrainedbenchmarkingrewarding,
-      title={MJ-VIDEO: Fine-Grained Benchmarking and Rewarding Video Preferences in Video Generation}, 
-      author={Haibo Tong and Zhaoyang Wang and Zhaorun Chen and Haonian Ji and Shi Qiu and Siwei Han and Kexin Geng and Zhongkai Xue and Yiyang Zhou and Peng Xia and Mingyu Ding and Rafael Rafailov and Chelsea Finn and Huaxiu Yao},
-      year={2025},
-      eprint={2502.01719},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2502.01719}, 
-}
-```
